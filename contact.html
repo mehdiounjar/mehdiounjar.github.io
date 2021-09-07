@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body 
+        {
+            background-image:url(contact.jpg) ;
+            background-size: cover;
+            filter: blury(5px);
+            font-family: 'poppins';
+        }
+        div
+        {
+            border: 1px solid rgba(255, 255, 255, 0);
+            height: 560px;
+            width: 600px;
+            border-radius: 24px;
+            text-align: center;
+            margin-top: 50px;
+            line-height: center;
+            margin-left: 330px;
+            background-color: rgba(255, 255, 255, 0.384);
+        }
+.object,.email
+{
+    border: 1px solid white;
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.384); 
+    font-size: large;
+    border-color: black;
+}
+.title
+{
+font-size: 24px;
+line-height: 100px;
+color: rgb(0, 0, 0);
+}
+textarea
+{
+    border: 1px solid white;
+    height: 100px;
+    width:90%;
+    margin-bottom: 30px;
+    border-radius: 24px;
+    padding: 5px;
+    padding-left: 20px;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.384);  
+    border-color: black; 
+}
+.bt 
+{
+border: 1px solid white;
+border-radius: 24px;
+height: 30px;
+width: 150px;
+margin-bottom: 100px;
+color: black;
+font-size: 18px;
+background-color: rgba(255, 255, 255, 0.384); 
+}
+.bt:hover
+{
+    background-color: cadetblue;
+    border-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
+    </style>
+</head>
+<body>  
+<div>
+    <label class="title">Email</label><br>
+    <input type="email" placeholder=" " class="email"><br>
+
+    <label class="title">Full Name</label><br>
+    <input type="text" class="object" placeholder=" "><br>
+    
+    <label for="" class="title">Type your Message</label>
+    <textarea  class="sujet"></textarea><br>
+<input type="button" class="bt" value="Send" onclick="thankyou()">
+</div>
+<script>
+    function thankyou()
+    {
+    alert("Thank You");
+    }
+</script>
+</body>
+</html>
